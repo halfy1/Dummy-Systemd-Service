@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG_FILE = "var/log/dummy-service.log"
+LOG_FILE = "/var/log/dummy-service.log"
 
 touch "$LOG_FILE"
 

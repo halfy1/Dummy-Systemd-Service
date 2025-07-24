@@ -1,0 +1,13 @@
+[Unit]
+Description=Dummy background logging service
+After=network.target
+
+[Service]
+ExecStart=/home/halfy/Документы/Projects/Dummy-Systemd-Service/dummy.sh
+Restart=always
+RestartSec=5
+StandardOutput=append:/var/log/dummy-service.log
+StandardError=append:/var/log/dummy-service.log
+
+[Install]
+WantedBy=multi-user.target
